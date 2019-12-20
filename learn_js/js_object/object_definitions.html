@@ -7,13 +7,41 @@
     <title>JS Definitions</title>
 </head>
 <body>
-    <h1>Javascript Variables</h1>
+
+    <!-- simple object -->
+    <!-- <h1>Javascript Variables</h1>
     <p id="demo"></p>
 
     <script type="text/javascript">
         // create and display a variable
         var person = "HieuTrung15";
         document.getElementById("demo").innerHTML=person;
+    </script> -->
+
+
+    <h1>Javascipt Variables Object</h1>
+    <p id="demo"></p>
+
+    <!-- <script type="text/javascript">
+        var person = {
+            firstname : "Tran",
+            lastname : "Hieu",
+            age : "20"
+        };
+        document.getElementById('demo').innerHTML = person.firstname + " " + person.lastname + " " +person.age;
+    </script> -->
+
+
+    <!-- using javascript keyword new -->
+    <script type="text/javascript">
+        var person = new Object();
+        person.firstname = "Hieu";
+        person.lastname = "Trung";
+        person.age = "15";
+
+        document.getElementById("demo").innerHTML = person.firstname + " " +person.lastname + " "+person.age;
     </script>
+
+
 </body>
 </html>
