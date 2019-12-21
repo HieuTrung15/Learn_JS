@@ -7,6 +7,41 @@
     <title>JS Properties</title>
 </head>
 <body>
+    <h1>Javascript Object Properties</h1>
+    <p id="demo"></p>
+
+    <!-- JS : Loop...in -->
+    <!-- <script type="text/javascript">
+        var txt = "";
+        var person = {fname:"hieu", lname:"trung",age:"20"};
+        var x;
+        for(x in person){
+            txt = txt + person[x] + " ";
+        }
+        document.getElementById("demo").innerHTML  = txt;
+    </script> -->
     
+    <!-- add properties -->
+    <!-- <script type="text/javascript">
+        var person = {
+            fname : "hieu",
+            lname : "trung",
+            age : "20"
+        };
+        person.nationality = "Viet Nam";
+        document.getElementById("demo").innerHTML = person.fname+person.lname + " "+person.nationality;
+    </script> -->
+
+    <!-- delete properties -->
+    <script type="text/javascript">
+        var person = new Object();
+        person.fname = "Hieu";
+        person.lname = "Trung";
+        person.age = "20";
+
+        delete person.age;
+        document.getElementById("demo").innerHTML = person.fname + person.lname +person.age ;
+    </script>
+
 </body>
 </html>
