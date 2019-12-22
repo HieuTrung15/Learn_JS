@@ -7,10 +7,21 @@
     <title>JS This Keyword</title>
 </head>
 <body>
+    <p>
+        In a method, this refers to the owners object. <br>
+        Alone, this refers to the global object. <br>
+        In a function, this refers to the global object. <br>
+        In a function, in strict mode, this is undefined. <br>
+        In an event, this refers to the element that receive the event. <br>
+        call(), or apply() can refer this to any object.
+
+    </p>
+
+
     <h1>Js This Method</h1>
     <p id="demo"></p>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var person = {
             fname:"Hieu",
             lname : "Trung",
@@ -22,6 +33,24 @@
         }
         document.getElementById("demo").innerHTML =person.myfn();
 
+    </script> -->
+
+    <!-- Explitcit Function Binding -->
+    <script type="text/javascript">
+        var person1 = {
+            fname : "Hieu",
+            lname : "Trung",
+            age : "20"
+        }
+        var person2 = {
+            fullname : function(){
+                return this.fname + this.lname+this.age;
+            }
+        }
+
+        var x = person2.fullname.call(person1);
+        document.getElementById("demo").innerHTML = x;
     </script>
+
 </body>
 </html>
